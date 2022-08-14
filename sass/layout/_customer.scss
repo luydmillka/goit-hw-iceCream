@@ -1,0 +1,137 @@
+.customers {
+  padding: 60px 0 30px 0;
+}
+.customer__photo {
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+.customer__thumb {
+  position: relative;
+  padding: 43px 58px 17px 67px;
+  margin-bottom: 36px;
+  background-color: #fafafa;
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 54px;
+    height: 40px;
+    top: 30px;
+    left: 53px;
+    background-image: url(../images/pref.png);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 4px;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    // left: 124px;
+    background-image: url(../images/dots1.png);
+  }
+}
+.customers__review {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #000000;
+
+  background-image: repeating-linear-gradient(
+    #fafafa 0px,
+    #fafafa 30px,
+    #e1e1e1 30px,
+    #e1e1e1 31px
+  );
+}
+.customer__name {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+  text-align: center;
+  color: #000000;
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 73px;
+    height: 12px;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    // left: 104px;
+    background-image: url(../images/dots.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customer__thumb {
+    padding: 37px 55px 44px 50px;
+    width: 620px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    &::before {
+      top: 20px;
+      left: 6px;
+    }
+    &::after {
+      bottom: -20px;
+      // left: 295px;
+    }
+  }
+  .customers__review {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.1;
+    background-image: repeating-linear-gradient(
+      #fafafa 0px,
+      #fafafa 30px,
+      #e1e1e1 30px,
+      #e1e1e1 31px
+    );
+  }
+  .customer__name {
+    font-size: 16px;
+    &::after {
+      content: '';
+      bottom: -40px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customer__thumb {
+    padding: 47px 109px 39px 109px;
+    width: 968px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    &::before {
+      top: 32px;
+    }
+    &::after {
+      bottom: -20px;
+    }
+  }
+  .customers__review {
+    font-size: 16px;
+    line-height: 1.86;
+    background-image: repeating-linear-gradient(
+      #fafafa 0px,
+      #fafafa 30px,
+      #e1e1e1 30px,
+      #e1e1e1 31px
+    );
+  }
+  .customer__name {
+    font-size: 20px;
+    &::after {
+      content: '';
+      bottom: -40px;
+    }
+  }
+}

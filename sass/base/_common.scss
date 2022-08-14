@@ -1,0 +1,101 @@
+body {
+  font-family: 'DM Sans', sans-serif;
+  // font-size: 14px;
+  // letter-spacing: 0.03em;
+  // color: var(--text);
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+
+.button-light {
+  min-height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  background-color: #fff;
+  color: var(--main-accent);
+  &:hover {
+    background-color: var(--main-accent);
+    color: #fff;
+  }
+  &:hover svg {
+    fill: #fff;
+  }
+}
+.button-dark {
+  min-height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  background-color: var(--main-accent);
+  color: #ffffff;
+  &:hover {
+    background-color: #ffffff;
+    color: var(--main-accent);
+  }
+  &:hover svg {
+    fill: var(--main-accent);
+  }
+}
+
+.title-label {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-accent);
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+  }
+}
+.title {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--main-accent);
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+  }
+}

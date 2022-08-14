@@ -1,0 +1,86 @@
+.about {
+  padding-top: 60px;
+  background-color: var(--background-lite);
+}
+.about__box {
+  background-image: url(../images/about-bcg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0px 391px;
+}
+.about__label {
+  margin-bottom: 15px;
+}
+.about__title {
+  margin-bottom: 32px;
+}
+.about__thumb {
+  margin-bottom: 40px;
+  // display: flex;
+  // justify-content: center;
+}
+.about__information {
+  width: 72%;
+}
+.about__text {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  &:last-of-type {
+    margin-bottom: 20px;
+  }
+  &--bold {
+    color: #000000;
+    margin-bottom: 20px;
+  }
+}
+.about__button {
+  padding: 5px 37px;
+  & svg {
+    margin-left: 13px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__box {
+    background: none;
+    display: flex;
+    align-items: center;
+  }
+  .about__thumb {
+    margin-right: 32px;
+  }
+  .about__information {
+    width: auto;
+  }
+  .about__text {
+    font-size: 14px;
+    line-height: 1.76;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    background-image: url(../images/about-bcg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0px 236px;
+  }
+  .about__thumb {
+    margin-right: 99px;
+  }
+  .about__information {
+    width: 463px;
+  }
+  .about__text {
+    margin-bottom: 20px;
+    line-height: 1.94;
+  }
+  .about__text--bold {
+    font-size: 16px;
+    line-height: 1.76;
+  }
+}
